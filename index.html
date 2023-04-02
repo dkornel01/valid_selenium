@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="success.js"></script>
+    <title>Dobrocsi_Kornél</title>
+</head>
+<body>
+    <form action="action.php">
+        <fieldset>
+        <div class="sor">
+            <label for="fnev">felhasznalónév<span>*</span></label>
+            <input type="text" name="fnev" id="fnev" placeholder="csak ékezetmentes betűk" pattern="[A-Za-z]*">
+        </div>
+        <div class="sor">
+            <label for="jsz">jelszo<span>*</span></label>
+            <input type="password" name="jsz" id="jsz" placeholder="min.3" pattern="[A-Za-z0-9]{8,}*">
+        </div>
+        <div class="sor">
+            <label for="email">email<span>*</span></label>
+            <input type="email" name="email" id="email" placeholder="vmi@vmi.hu" >
+        </div>
+    </fieldset>
+        <div class="sor">
+            <input type="submit" value="Küldés" name="kuld" id="kuld">
+        </div>
+    </form>
+    <div class="success-message">
+        sikeres küldes
+    </div>
+</body>
+</html>
